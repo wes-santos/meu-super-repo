@@ -6,3 +6,4 @@ CSS
 JavaScript
 React
 SQL
+JavaScript ES6
