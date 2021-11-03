@@ -1,0 +1,38 @@
+body {
+    width: 1260px;
+}
+
+/* footer, header, main, article, section, div{
+    border: 1px solid green;
+} */
+
+nav ul li{
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+}
+
+nav {
+    float: right;
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+}
+
+img, iframe {
+    border-radius: 6px;
+}
+
+p { 
+    width: 800px;
+    line-height: 1.5em;
+}
+
+aside {
+    float: right;
+    position: fixed;
+    left: 820px;
+    top: 196px;
+}
