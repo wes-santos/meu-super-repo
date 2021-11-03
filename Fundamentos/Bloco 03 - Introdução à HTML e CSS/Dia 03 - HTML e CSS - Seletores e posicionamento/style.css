@@ -7,6 +7,13 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
+p{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 p,
 li {
     font-size: 16px;
@@ -23,12 +30,22 @@ line-height: 55px;
 font-weight: 600;
 font-size: 45px;
 letter-spacing: -1px;
+margin-top: 10px;
+margin-bottom: 60px;
 }
 
 .section-title {
 line-height: 42px;
 font-weight: 600;
 font-size: 28px;
+margin-top: 10px;
+margin-bottom: 60px;
+}
+
+.text-section-title {
+    margin-top: 50px;
+    font-size: 16px;
+    padding: 0 95px;
 }
 
 .testimonial-name {
@@ -51,39 +68,121 @@ font-size: 16px;
 line-height: 20px;
 font-weight: 700;
 text-decoration: none;
+position: absolute;
+margin-top: 20px;
 }
 
 #header{
     background-image: url('images/smiling-image.jpg');
     background-size: cover;
+    background-position: 50% 25%;
     padding: 60px 30px 40px;
 }
 
 #header-content{
-   max-width: 600px; 
-   text-align:justify;
+   max-width: 660px; 
+   margin-left: 75px
 }
+
+.header-text{
+    text-align: left;
+    max-width: 81%;
+}
+
 h1{
     text-align: left;
 }
 
 #market{
     padding: 6em 30px;
+    text-align: center;
 }
 
 #market h2 {
     margin-bottom: 40px ;
 }
 
-#student-testimonial-wrapper{
+#student-testimonial{
     max-width: 80%;
     margin: 0 auto;
+    padding: 0em 30px 6em;
 }
+
+.student-testimonial-wrapper{
+    margin: auto;
+    width: 80%;
+}
+
 .student-container{
-    width: 33%;
+    width: 30%;
     display:inline-block;
-    margin: 10px 0px;
+    margin: 0 10px;
+    text-align: center;
 }
+
 .student-container img{
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
+
+.name-style{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+h4 {
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#learning{
+    background-color: #F5F5F5;
+    padding: 6em 30px;
+    min-height: 350px;
+}
+
+#learning-left-div{
+    float: left;
+    width: 35%;
+    margin-left: 60px;
+}
+
+#learning-right-div{
+    float: right;
+    margin-right: 60px;
+}
+
+ul li{
+    font-size: 16px;
+    line-height: 1.4em;
+    list-style-type: square;
+}
+
+#who-we-are{
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 0em 30px 6em;
+    text-align:center;
+}
+.founders{
+    width: 40%;
+    margin: 0 10px;
+    display: inline-block;
+}
+.founders img{
+    margin-bottom: 10px;
+}
+
+h2{
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/*
+div {
+    border: solid green 2px;
+}
+
+*/
