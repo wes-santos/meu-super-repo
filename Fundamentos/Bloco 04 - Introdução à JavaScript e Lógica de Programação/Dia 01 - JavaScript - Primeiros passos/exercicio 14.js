@@ -22,8 +22,7 @@ else {
 
 
 if (salarioBase <= 1903.98) {
-    descontoIR = salarioBase - 0;
-    salarioLiquido = salarioBase - descontoIR;
+    salarioLiquido = salarioBase
 }
 else if (salarioBase >= 1903.99 && salarioBase <= 2826.65) {
     descontoIR = (salarioBase * 0.075) - 142.80;
