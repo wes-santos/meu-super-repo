@@ -14,3 +14,11 @@ document.getElementById('primeiroFilhoDoFilho').appendChild(paragraph);
 paragraph.id = "filhoDoPrimeiroFilhoDoFilho";
 
 document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentNode.parentNode.nextElementSibling;
+
+let start = document.getElementById('paiDoPai').firstElementChild;
+
+console.log(start.children);
+// start.removeChild(document.getElementById('primeiroFilho'));
+// start.removeChild(document.getElementById('segundoEUltimoFilhoDoFilho'));
+
+//    element.removeChild(element.children[index]);
