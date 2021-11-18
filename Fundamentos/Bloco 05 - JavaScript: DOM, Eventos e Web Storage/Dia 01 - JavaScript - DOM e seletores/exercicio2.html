@@ -57,10 +57,50 @@
 
     //    Exercício 1
     function changeTagTextToDescription() {
-      let primeiroParagrafo = document.querySelector('.center-content').firstElementChild;
-      primeiroParagrafo.innerText = "Me vejo formado em Desenvolvimento Web pela Trybe atuando como desenvolvedor na XP Investimentos e escalando em minha carreira aprendendo cada vez mais.";
+      let firstParagraph = document.getElementsByTagName('p')[0];
+      firstParagraph.innerText = "Me vejo formado em Desenvolvimento Web pela Trybe atuando como desenvolvedor na XP Investimentos e escalando em minha carreira aprendendo cada vez mais.";
     }
     changeTagTextToDescription();
+
+    //    Exercício 2
+    function changeSquareColorToGreen() {
+      let selectSquare = document.getElementsByClassName('main-content');
+      selectSquare[0].style.backgroundColor = 'rgb(76,164,109)';
+    }
+    changeSquareColorToGreen();
+
+    //    Exercício 3
+    function changeRedSquareColorToWhite() {
+      let selectRedSquare = document.getElementsByClassName('center-content')[0];
+      selectRedSquare.style.backgroundColor = 'white';
+    }
+    changeRedSquareColorToWhite();
+
+    //    Exercício 4
+    function changeH1Text() {
+      let selectTitleH1 = document.getElementsByTagName('h1')[0];
+      selectTitleH1.innerText = "Exercício 5.1 - JavaScript";
+    }
+    changeH1Text();
+
+    //    Exercício 5
+    function changeAllParagraphs() {
+      let selectParagraphs = document.getElementsByTagName('p');
+      for (let index = 0; index < selectParagraphs.length; index += 1) {
+        selectParagraphs[index].style.textTransform = "uppercase";
+      }
+    }
+    changeAllParagraphs();
+
+    //    Exercicio 6
+    function showAllParagraphsContent() {
+      let paragraphsContent = document.getElementsByTagName('p');
+
+      for (let index = 0; index < paragraphsContent.length; index += 1) {
+        console.log(paragraphsContent[index].innerHTML);
+      }
+    }
+    showAllParagraphsContent();
     </script>
   </body>
 </html>
