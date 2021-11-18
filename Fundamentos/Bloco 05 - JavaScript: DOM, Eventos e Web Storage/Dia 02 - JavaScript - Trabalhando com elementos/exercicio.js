@@ -1,15 +1,16 @@
-console.log(document.querySelector('#elementoOndeVoceEsta').parentNode.style.color = "green");
-console.log(document.querySelector('#primeiroFilhoDoFilho').innerText = "Tentando adicionar um texto");
-console.log(document.querySelector('#pai').firstElementChild);
-console.log(document.querySelector('#elementoOndeVoceEsta').previousElementSibling);
-console.log(document.querySelector('#elementoOndeVoceEsta').nextSibling);
-console.log(document.querySelector('#elementoOndeVoceEsta').nextElementSibling);
-console.log(document.querySelector('#pai').firstElementChild.nextElementSibling.nextSibling.nextSibling);
-console.log('Oi');
+document.querySelector('#elementoOndeVoceEsta').parentNode.style.color = "green";
+document.querySelector('#primeiroFilhoDoFilho').innerText = "Tentando adicionar um texto";
+document.querySelector('#pai').firstElementChild;
+document.querySelector('#elementoOndeVoceEsta').previousElementSibling;
+document.querySelector('#elementoOndeVoceEsta').nextSibling;
+document.querySelector('#elementoOndeVoceEsta').nextElementSibling;
+document.querySelector('#pai').firstElementChild.nextElementSibling.nextSibling.nextSibling;
+document.getElementById('elementoOndeVoceEsta').appendChild(document.createElement('div'));
+document.getElementById('pai').appendChild(document.createElement('section'));
 
-let elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta');
-let elementoOndeVoceEsta2 = document.createElement('section');
-document.appendChild(elementoOndeVoceEsta);
+let paragraph = document.createElement('p');
 
+document.getElementById('primeiroFilhoDoFilho').appendChild(paragraph);
+paragraph.id = "filhoDoPrimeiroFilhoDoFilho";
 
-console.log(document.querySelector('#elementoOndeVoceEsta').children);
+document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentNode.parentNode.nextElementSibling;
