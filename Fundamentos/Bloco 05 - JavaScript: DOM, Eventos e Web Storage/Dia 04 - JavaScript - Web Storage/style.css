@@ -1,0 +1,52 @@
+#inputDoTexto {
+    width: 500px;
+    height: 250px;
+}
+
+#backgroundColorInput {
+    width: 200px;
+}
+
+#fontSizeInput {
+    width: 200px;
+}
+
+#fontColorInput {
+    width: 200px;
+}
+
+#lineHeightInput {
+    width: 200px;
+}
+
+#fontFamilyInput {
+    width: 250px;
+}
+
+#textoDigitado {
+    border: solid 1px;
+    width: 800px;
+    text-align: center;
+    height: auto;
+    margin-right: 400px;
+}
+
+.texto {
+    margin: 0 auto;
+    width: 800px;
+    float: right;
+    padding-right: 400px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.position {
+    position: fixed;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 40px;
+}
