@@ -16,11 +16,31 @@ function createStates() {
   }
 }
 
-submitButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    insertData();
-    event.submit;
+// submitButton.addEventListener('click', function (event) {
+//     event.preventDefault();
+//     event.submit;
+//     insertData();
+// });
+function checkIfUrlChange() {
+    if(document.location.search !== '') {
+      insertData();
+    }
+}
+
+function url() {
+    return newInfosPlace.innerText;
+}
+
+submitButton.addEventListener('click', function () {
+    if (url() !== '') {
+      alert('Limpe as informações antes de enviar novamente');
+    } else {
+        checkIfUrlChange()
+    }
 });
+cleanButton.addEventListener('click', function () {
+  document.location.search = '';
+})
 
 function captureData() {
   const part1 = document.location.search;
