@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de currículo</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <form action="" method="GET">
+                <div id="dados-pessoais">
+                    <fieldset>
+                        <legend>Nome:</legend>
+                        <input type="text" maxlength="40" name="nome" required>
+                        <legend>E-mail:</legend>
+                        <input type="email" maxlength="50" name="email" required>
+                        <legend>CPF:</legend>
+                        <input type="number" maxlength="11" name="cpf" required>
+                        <legend>Endereço:</legend>
+                        <input type="text" maxlength="200" name="endereco" required>
+                        <legend>Cidade:</legend>
+                        <input type="text" maxlength="28" name="cidade" required>
+                        <legend>Estado:</legend>
+                        <select name="estado" id="estado">
+                            <option selected value>Escolha um estado</option>
+                        </select>
+                        <legend>Tipo:</legend>
+                        <input type="radio" value="casa" id="casa" name="tipo" required>
+                        <label for="casa">Casa</label>
+                        <input type="radio" value="apartamento" id="apartamento" name="tipo" required>
+                        <label for="apartamento">Apartamento</label>
+                    </fieldset>
+                </div>
+    
+                <div id="dados-do-ultimo-emprego">
+                    <fieldset>
+                        <legend>Resumo do currículo:</legend>
+                        <textarea name="resumo" id="resumo-do-curriculo" cols="30" rows="10" maxlength="1000" required></textarea>
+                        <legend>Cargo:</legend>
+                        <input type="text" maxlength="40" name="cargo" required>
+                        <legend>Descrição do cargo:</legend>
+                        <input type="text" maxlength="500" name="descricao" required>
+                        <legend>Data de início:</legend>
+                        <input type="date" name="data" required id="data-de-inicio">
+                    </fieldset>
+                    <button type="submit" id="enviar-informacoes">Enviar informações</button>
+                    <button id="limpar-informacoes">Limpar informações</button>
+                </div>
+                <div id="dados-capturados">
+
+                </div>
+        </form>
+    </main>
+</body>
+</html>

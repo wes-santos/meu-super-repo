@@ -1,0 +1,26 @@
+* {
+    font-family: sans-serif;
+}
+
+fieldset {
+    width: 800px;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+button {
+    border-radius: 5px;
+    border: solid 1px black;
+    background-color: white;
+    padding: 10px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+legend {
+    margin: 10px 0;
+}
+
+#dados-do-ultimo-emprego {
+    margin-top: 25px;
+}
