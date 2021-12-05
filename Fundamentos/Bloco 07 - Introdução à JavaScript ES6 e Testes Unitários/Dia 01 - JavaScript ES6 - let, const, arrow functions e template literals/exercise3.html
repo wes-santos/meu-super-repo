@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 3</title>
+  <style>
+    .align {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .center-align {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    button { 
+      width: 80px;
+      padding: 5px;
+      align-self: center;
+      margin-bottom: 50px;
+      margin-top: 30px;
+    }
+
+    .align div div {
+      border: solid 1px black;
+      padding: 10px;
+      width: 50px;
+      text-align: center;
+    }
+
+    .adjust {
+      display: flex;
+      align-items: center;
+    }
+
+    .adjust p {
+      margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="center-align">
+    <div class="align">
+      <button id="button">Clique</button>
+      <div class="adjust">
+        <p>Quantidade de cliques: </p>
+        <div id="clickCount">0</div>
+      </div>
+    </div>
+  </div>
+  <script src="exercicios.js"></script>
+</body>
+</html>
