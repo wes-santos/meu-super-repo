@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+  font-size: 1.7rem;
+}
+
+.content {
+  margin: 200px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  max-width: 840px;
+  gap: 20px;
+  height: 200px;
+  font-size: 1.1rem;
+}
+
+.content ul li {
+  list-style: none;
+  line-height: 1.5em;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.bold {
+  font-weight: 700;
+}
