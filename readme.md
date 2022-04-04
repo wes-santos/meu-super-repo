@@ -4,7 +4,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
-O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
+O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais (Soft Skills).
 
 ## Fundamentos do Desenvolvimento Web :white_check_mark:
 
@@ -41,12 +41,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [x] 5-3: _JavaScript - Eventos_
 - [x] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _[Projeto - Meme Generator]()_
 - [x] 5-6: _[Projeto - Arte com Pixels]()_
 - [x] 5-7: _[Projeto - Lista de tarefas]()_
-- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [ ] 5-7: _[Projeto - Carta Misteriosa]()_
-
 ##### Bloco 6: HTML & CSS avançado
 
 - [x] 6-1: _HTML & CSS - Forms_
@@ -54,7 +50,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-3: _CSS Flexbox - Part 1_
 - [x] 6-4: _CSS Flexbox - Part 2_
 - [x] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - Página inicial do Facebook]()_
+- [x] 6-6: _[Projeto - Trybewarts]()_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
@@ -90,20 +86,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 11-1: _'Hello, world!' no React!_
 - [x] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [x] 11-3: _[Projeto - Solar System]()_
 
 ##### Bloco 12: React
 
 - [x] 12-1: _Components com estado_
 - [x] 12-2: _Eventos e formulários no React_
-- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- [x] 12-3: _[Projeto - Tryunfo]()_
 
 ##### Bloco 13: React
 
 - [x] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
 - [x] 13-2: _Ciclo de vida de componentes em React_
 - [x] 13-3: _React Router_
-- [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_
+- [x] 13-4: _[Projeto - TrybeTunes]()_
 
 ##### Bloco 14: Metodologias Ágeis
 
@@ -120,21 +116,21 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 16-1: _Introdução ao Redux_
 - [x] 16-2: _React com Redux - Parte 1_
-- [ ] 16-3: _React com Redux - Prática_
-- [ ] 16-4: _React com Redux - Parte 2_
-- [ ] 16-5: _Testes síncronos com React-Redux_
-- [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_
+- [x] 16-3: _React com Redux - Prática_
+- [x] 16-4: _React com Redux - Parte 2_
+- [x] 16-5: _Testes síncronos com React-Redux_
+- [x] 16-6: _[Projeto - Trybe Wallet]()_
 
 ##### Bloco 17: Projeto React
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_
+- [x] 17-1: _[Projeto - Jogo de Trivia]()_
 
 ##### Bloco 18: React & Context API
 
-- [ ] 18-1: _Context API do React_
-- [ ] 18-2: _React Hooks - useState e useContext_
-- [ ] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [x] 18-1: _Context API do React_
+- [x] 18-2: _React Hooks - useState e useContext_
+- [x] 18-3: _React Hooks - useEffect e Hooks customizados_
+- [x] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
 ##### Bloco 19: Projeto Final de Front-end
 
