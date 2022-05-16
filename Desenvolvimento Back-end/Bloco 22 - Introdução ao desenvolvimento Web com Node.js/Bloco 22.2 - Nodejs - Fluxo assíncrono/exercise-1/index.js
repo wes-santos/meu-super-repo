@@ -1,5 +1,5 @@
 const simpsons = require('./simpsons.json');
-const fs = require('fs');
+const fs = require('fs').promises;
 
 function showCharactersNamesAndId() {
   return simpsons.forEach(character => console.log(`${character.id} - ${character.name}`));
@@ -12,9 +12,28 @@ async function showCharacterInfoById(id) {
     });
 }
 
-// showCharactersNamesAndId();
-showCharacterInfoById(10)
-  .then((r) => console.log(r))
-  .catch((err) => console.log(err));
+function removeCharacters() {
+  return simpsons.filter(character => character.id !== '10').filter(character => character.id !== '6');
+}
 
-const data = fs.readFileSync('simpsons.json', 'utf-8');
+function changeSimpsonsArchive() {
+  const newJson = JSON.stringify(removeCharacters());
+  fs.writeFile('./simpsons.json', newJson);
+}
+
+// showCharactersNamesAndId();
+// showCharacterInfoById(10)
+//   .then((r) => console.log(r))
+//   .catch((err) => console.log(err));
+
+changeSimpsonsArchive();
+
+const data = fs.readFile('./simpsons.json', 'utf-8', (err, data) => {
+  if (err) {
+    console.error(`Não foi possível ler o arquivo simpsons.json\n Erro: ${err}`);
+    process.exit(1);
+  }
+  console.log(`Conteúdo do arquivo: ${data}`);
+});
+
+data.then(content => console.log(content)).catch(error => console.log(error));
