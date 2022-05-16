@@ -1,8 +1,22 @@
-const simpsons = require('./simpsons.json');
 const fs = require('fs').promises;
 
-function showCharactersNamesAndId() {
-  return simpsons.forEach(character => console.log(`${character.id} - ${character.name}`));
+function readSimpsonsFile() {
+  return fs.readFile('./simpsons.json', 'utf-8', (err, data) => {
+    if (err) {
+      console.error(`Não foi possível ler o arquivo simpsons.json\n Erro: ${err}`);
+      process.exit(1);
+    }
+    data;
+  })
+}
+
+const simpsons = readSimpsonsFile()
+  .then(content => JSON.parse(content))
+  .catch(error => error);
+
+async function showCharactersNamesAndId() {
+  const data = await simpsons;
+  return await data.forEach(character => console.log(`${character.id} - ${character.name}`));
 }
 
 async function showCharacterInfoById(id) {
@@ -12,8 +26,9 @@ async function showCharacterInfoById(id) {
     });
 }
 
-function removeCharacters() {
-  return simpsons.filter(character => character.id !== '10').filter(character => character.id !== '6');
+async function removeCharacters() {
+  const data = await simpsons;
+  return await data.filter(character => character.id !== '10').filter(character => character.id !== '6');
 }
 
 function changeSimpsonsArchive() {
@@ -21,19 +36,31 @@ function changeSimpsonsArchive() {
   fs.writeFile('./simpsons.json', newJson);
 }
 
+async function createSimpsonsFamilyFile() {
+  const data = await simpsons;
+  const result = data.filter(character => character.id <= 4);
+  return fs.writeFile('./simpsonsFamily.json', JSON.stringify(result));
+}
+
+async function addCharacter() {
+  const data = await simpsons;
+  const simpsonsFamily = await fs.readFile('./simpsonsFamily.json', 'utf-8', (err, data) => {
+    if (err) {
+      console.error(`Não foi possível ler o arquivo simpsonsFamily.json\n Erro: ${err}`);
+      process.exit(1);
+    }
+    data;
+  })
+  const nelsonMuntz = data.find(character => character.name === 'Nelson Muntz');
+  const result = [...JSON.parse(simpsonsFamily), nelsonMuntz];
+  return fs.writeFile('./simpsonsFamily.json', JSON.stringify(result));
+}
+
 // showCharactersNamesAndId();
 // showCharacterInfoById(10)
 //   .then((r) => console.log(r))
 //   .catch((err) => console.log(err));
 
-changeSimpsonsArchive();
-
-const data = fs.readFile('./simpsons.json', 'utf-8', (err, data) => {
-  if (err) {
-    console.error(`Não foi possível ler o arquivo simpsons.json\n Erro: ${err}`);
-    process.exit(1);
-  }
-  console.log(`Conteúdo do arquivo: ${data}`);
-});
-
-data.then(content => console.log(content)).catch(error => console.log(error));
+// changeSimpsonsArchive();
+// createSimpsonsFamilyFile();
+addCharacter();
