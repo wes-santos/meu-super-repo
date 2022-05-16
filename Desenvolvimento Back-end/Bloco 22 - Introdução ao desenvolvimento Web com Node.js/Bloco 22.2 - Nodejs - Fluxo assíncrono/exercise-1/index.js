@@ -56,6 +56,21 @@ async function addCharacter() {
   return fs.writeFile('./simpsonsFamily.json', JSON.stringify(result));
 }
 
+async function updateCharacter() {
+  const data = await fs.readFile('./simpsonsFamily.json', 'utf-8', (err, data) => {
+    if (err) {
+      console.error(`Não foi possível ler o arquivo simpsonsFamily.json\n Erro: ${err}`);
+      process.exit(1);
+    }
+    data;
+  });
+  const simpsonsData = await simpsons;
+  const maggieSimpson = simpsonsData.find(character => character.name === 'Maggie Simpson');
+  const result = JSON.parse(data);
+  result[result.length - 1] = maggieSimpson;
+  return fs.writeFile('./simpsonsFamily.json', JSON.stringify(result));
+}
+
 // showCharactersNamesAndId();
 // showCharacterInfoById(10)
 //   .then((r) => console.log(r))
@@ -63,4 +78,5 @@ async function addCharacter() {
 
 // changeSimpsonsArchive();
 // createSimpsonsFamilyFile();
-addCharacter();
+// addCharacter();
+updateCharacter();
